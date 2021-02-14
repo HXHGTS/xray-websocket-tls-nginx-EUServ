@@ -6,7 +6,7 @@
 
 一句话执行(CentOS7):
 
-`yum install curl -y && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/resolv.conf > /etc/resolv.conf && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/v2ray > v2ray && chmod +x v2ray && sudo ./v2ray`
+`yum install curl -y && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/resolv.conf > /etc/resolv.conf && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/xray > xray && chmod +x xray && sudo ./xray`
 
 CDN套用方法请参看[CDN套用方法](/cdn.md)
 
@@ -24,4 +24,4 @@ CDN套用方法请参看[CDN套用方法](/cdn.md)
 
 #### C语言脚本下载
 
-[下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/xray.c)
+[下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/v2ray.c)
