@@ -6,7 +6,7 @@
 
 一句话执行(CentOS7):
 
-`yum install curl -y && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/resolv.conf > /etc/resolv.conf && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/xray > xray && chmod +x xray && sudo ./xray`
+`echo 'nameserver 2001:67c:2b0::4' > /etc/resolv.conf && echo 'nameserver 2001:67c:2b0::6' >> /etc/resolv.conf && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/xray > xray && chmod +x xray && sudo ./xray`
 
 CDN套用方法请参看[CDN套用方法](/cdn.md)
 
