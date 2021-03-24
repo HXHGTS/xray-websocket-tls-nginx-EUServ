@@ -6,7 +6,7 @@
 
 一句话执行(CentOS7):
 
-`echo 'nameserver 2001:67c:2b0::4' > /etc/resolv.conf && echo 'nameserver 2001:67c:2b0::6' >> /etc/resolv.conf && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/xray > xray && chmod +x xray && sudo ./xray`
+`echo 'nameserver 2001:67c:2b0::4' > /etc/resolv.conf && echo 'nameserver 2001:67c:2b0::6' >> /etc/resolv.conf && rm -f /etc/yum.repos.d/* && curl https://cdn.jsdelivr.net/gh/HXHGTS/GreatDNS/CentOS7-Base.repo > /etc/yum.repos.d/CentOS-Base.repo && yum clean all && yum makecache && curl https://cdn.jsdelivr.net/gh/HXHGTS/xray-websocket-tls-nginx-EUServ/xray > xray && chmod +x xray && sudo ./xray`
 
 CDN套用方法请参看[CDN套用方法](/cdn.md)
 
