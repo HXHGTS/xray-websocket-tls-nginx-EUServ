@@ -153,11 +153,7 @@ int install_xray() {
     system("setenforce 0");
     system("yum install -y unzip epel-release nginx bind-utils qrencode");
     printf("正在运行xray安装脚本. . .\n");
-    system("curl https://cdn.jsdelivr.net/gh/XTLS/Xray-install/install-release.sh > install-release.sh");
-    system("chmod +x install-release.sh");
-    system("bash install-release.sh");
-    system("sleep 3");
-    system("rm -rf install-release.sh");
+    system("curl -sSL https://cdn.jsdelivr.net/gh/XTLS/Xray-install/install-release.sh | sh");
     printf("正在复制SSL证书与私钥. . .\n");
     system("cp -rf /root/1.pem /usr/local/etc/xray/certificate.pem");
     system("cp -rf /root/2.pem /usr/local/etc/xray/private.pem");
